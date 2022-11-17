@@ -61,6 +61,11 @@ export function activate(context: vscode.ExtensionContext) {
   });
 
   context.subscriptions.push(createTemplate);
+
+  let selectTemplate = vscode.commands.registerCommand('no-boilerplate.selectTemplate', async () => {
+
+  });
+  context.subscriptions.push(selectTemplate);
 }
 
 // This method is called when your extension is deactivated
